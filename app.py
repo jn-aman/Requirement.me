@@ -35,7 +35,7 @@ def upload_file():
             flash('No selected file','error')
             return redirect(request.url)
         if file and allowed_file(file.filename):
-            flash("Generating requirement.txt", 'info')
+#            flash("Generating requirement.txt", 'info')
 
             filename = secure_filename(file.filename)
             foldername=filename.split(".")[0]
@@ -65,7 +65,7 @@ def uploaded_file(foldername,filename):
     print(file_path,folder_path)
 
     subprocess.Popen(['yes | pigar', "-p" ,file_path, '-P',folder_path], shell=True,cwd=folder_path).wait()
-    flash("Done", 'success')
+#    flash("Done", 'success')
 
     def generate():
         with open(file_path) as f:
