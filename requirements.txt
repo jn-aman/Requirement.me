@@ -9,4 +9,4 @@ Flask_Toastr == 0.5.4
 # amanp/app.py: 3
 Werkzeug == 1.0.0
 gunicorn==20.0.4
-pigar=0.10.0
+pigar==0.10.0
