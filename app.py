@@ -75,3 +75,6 @@ def uploaded_file(foldername,filename):
     r = app.response_class(generate())
     r.headers.set('Content-Disposition', 'attachment', filename='requirements.txt')
     return r
+
+if __name__ == "__main__": 
+        app.run() 
